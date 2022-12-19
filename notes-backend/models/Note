@@ -1,0 +1,7 @@
+const mongoose = require('mongoose');
+
+const Notes = mongoose.Schema({
+    body: { type: String }
+}, { versionKey: false });
+
+module.exports.Note = mongoose.model('note', Notes);
